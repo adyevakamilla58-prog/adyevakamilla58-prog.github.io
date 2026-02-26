@@ -1,0 +1,830 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(font/Inter_18pt-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url(font/Inter_18pt-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Inter-Medium;
+    src: url(font/Inter_18pt-Medium.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(font/Inter_18pt-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(font/Inter_18pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: Inter-Light;
+    src: url(font/Inter_24pt-Light.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(font/Inter_24pt-Regular.ttf);
+}
+
+
+@import "maffins-adapt.scss";
+
+
+$white: #FFFAED;
+$beige: #F4E4BF;
+$red: #730B18;
+$vinous: #4B1210;
+$roz: #F39AAB;
+
+
+$shadow: 5px 10px 20px rgba(136,122,90,0.4);
+
+
+.container{
+    width: 1920px;
+    height: 9602px;
+    margin: 0 auto;
+    background-color: $white;
+}
+.header{
+    height: 97px;
+    background-color: $beige;
+    display: flex;
+    &__p{
+        font-size: 40px;
+        font-family: Inter-Bold;
+        color: $red;
+        margin-top: 22px;
+        margin-left: 233px;
+    }
+    &__nav{
+        margin-top: 40px;
+        display: flex;
+        gap: 42px;
+        margin-left: 100px;
+        &__a{
+            font-family: Inter-Regular;
+            font-size: 20px;
+            color: $vinous;
+            text-decoration: none;
+        }
+        &__a:hover{
+            color: $red;
+            font-family: Inter-Medium;
+        }
+    }
+    &__input{
+        height: 59px;
+        width: 175px;
+        border-radius: 30px;
+        background-color: $red;
+        color: $white;
+        font-family: Inter-Regular;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 574px;
+        border: none;
+    }
+    &__input:hover{
+        background-color: $vinous;
+    }
+}
+.drop{
+    display: none;
+}
+
+.maff-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__grid{
+        flex-direction: column;
+        &__p{
+            font-size: 60px;
+            font-family: Inter-ExtraBold;
+            color: $red;
+            margin-left: 225px;
+            margin-top: 252px;
+            width: 672px;
+            line-height: 143%;
+            letter-spacing: 5.5%;
+            width: 640px;
+        }
+        &__p2{
+            color: $vinous;
+            font-size: 24px;
+            font-family: Inter-Medium;
+            margin-top: 79px;
+            margin-left: 221px;
+            width: 560px;
+            line-height: 200%;
+        }
+        &__input{
+            width: 173px;
+            height: 56px;
+            background-color: $red;
+            border-radius: 30px;
+            color: $white;
+            margin-top: 96px;
+            margin-left: 221px;
+            border: none;
+            font-size: 20px;
+            font-family: Inter-Medium;
+        }
+        &__input:hover{
+            background-color: $vinous;
+        }
+        &__g{
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+            margin-top: 82px;
+            gap: 40px;
+            width: 350px;
+            margin-left: 70px;
+            &__column{
+                width: 350px;
+                &__img{
+                    width: 350px;
+                    height: 700px;
+                    border-radius: 200px 50px 50px 50px;
+                    &-2{
+                        margin-top: 45px;
+                        border-radius: 50px 50px 200px 50px; 
+                        height: 700px;   
+                    }
+
+                }
+                &__grad{
+                    margin-top: 45px;
+                    width: 350px;
+                    height: 144px;
+                    border-radius: 50px 50px 50px 200px;
+                    background: linear-gradient(79.09deg, #FFFAED -3.93%, #CB7F3C 98.32%);
+                    &-2{
+                        margin-top: 50px;
+                        background: linear-gradient(79.09deg, #FFFAED -3.93%, #F39AAB 98.32%);
+                        border-radius: 50px 50px 50px 200px;
+                        transform: rotate(180deg);
+                        width: 350px;
+                        height: 144px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.p{
+    margin: 0 auto;
+    font-family: Inter-ExtraBold;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-left: 689px;
+    color: $red;
+}
+
+.maff-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px;
+    width: 1370px;
+    margin-left: 204px;
+    margin-top: 53px;
+    padding: 20px;
+    row-gap: 100px;
+    &__sobitie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        &__s1{
+            border-radius: 30px;
+            z-index: 10;
+            row-gap: 61px;
+            box-shadow: $shadow;
+        }
+        &__div{
+        width: 475px;
+        height: 281px;
+        background-color: $white;
+        box-shadow: $shadow;
+        z-index: 1;
+        margin-top: -90px;
+        border-radius: 30px;
+        margin-left: -33px;
+        &__p{
+            margin-top: 131px;
+            text-align: center;
+            font-family: Inter-SemiBold;
+            color: #4B1210;
+            font-size: 32px;
+            z-index: 10;
+        }
+        &__input{
+            display: flex;
+            height: 58px;
+            width: 172px;
+            background-color: $beige;
+            border-radius: 30px;
+            border: none;
+            font-size: 20px;
+            font-family: Inter-Medium;
+            color: $vinous;
+            z-index: 11;
+            justify-content: center;
+            margin-left: 151px;
+            margin-top: 28px;
+                &:hover{
+                    background-color: #EBD6A5;
+                }
+            }  
+        }
+    }
+}
+
+.p-2{
+    font-family: Inter-Bold;
+    font-size: 52px;
+    color: $red;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 815px;
+}
+
+.maff-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1495px;
+    margin-left: 240px;
+    margin-top: 44px;
+    &__poshemy{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        &__n{
+            background: linear-gradient(180deg, rgba(203, 43, 63, 0.8) 0%, rgba(243, 154, 171, 0.5) 100%);
+            box-shadow: 5px 10px 20px rgba(136, 122, 90, 0.4);
+            height: 214px;
+            width: 469px;
+            z-index: 10;
+            margin-top: -190px;
+            border-radius: 30px;
+            margin-left: 32px;
+            &__p{
+                font-size: 24px;
+                font-family: Inter-Medium;
+                color: rgb(255, 255, 255);                    
+                z-index: 5;
+                text-align: center;
+                margin-top: 25px;
+            }
+            &__p1{
+                text-align: center;
+                font-size: 16px;
+                font-family: Inter-Regular;
+                color: rgb(255, 255, 255);
+                margin-top: 19px;
+                line-height: 190%;                    
+                z-index: 5;
+            }
+        }
+        &__img{
+            border-radius: 30px;
+            &-t{
+                border-radius: 30px;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+.maff-4{
+    width: 1493px;
+    height: 171px;
+    border-radius: 30px;
+    background-color: $beige;
+    background: linear-gradient(180deg, #F39AAB 0%, #FFFAED 100%);
+    box-shadow: 5px 10px 20px rgba(136, 122, 90, 0.4);
+    margin-left: 230px;
+    margin-top: 75px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    &__column{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        &__p{
+            font-family: Inter-ExtraBold;
+            font-size: 36px;
+            color: $vinous;
+        }
+        &__p1{
+            margin-top: 35px;
+            font-size: 16px;
+            font-family: Inter-SemiBold;
+            color: $vinous;
+        }
+    }
+}
+
+.maff-5{
+    margin-top: 127px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__p{
+        margin-left: 43px;
+        margin-top: 120px;
+        font-family: Inter-ExtraBold;
+        font-size: 40px;
+        color: $vinous;
+    }
+    &__foto{
+        width: 728px;
+        height: 801px;
+        background-color: white;
+        border-radius: 30px;
+        border: 1px solid $vinous;
+        margin-left: 230px;
+    }
+    &__form{
+        margin-top: 77px;
+        margin-left: 42px;
+        &__input{
+            border-radius: 30px; 
+            width: 531px;
+            height: 71px;
+            font-family: Inter-Light;
+            font-size: 20px;
+            display: flex;
+            background-color: #ffffff;
+            border: 2px solid $vinous;
+            margin-top: 10px;
+        }
+        &__buttone{
+            width: 172px;
+            height: 60px;
+            background-color: $vinous;
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-family: Inter-SemiBold;
+            color: $white;
+            margin-top: 30px;
+        }
+    }
+}
+
+.maff-6{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    max-width: 1478px;
+    margin-left: 230px;
+    &__p{
+        font-size: 52px;
+        font-family: Inter-Bold;
+        color: $red;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+    &__column{
+        height: 352px;
+        width: 317px;
+        background-color: $beige;
+        border-radius: 30px;
+        margin-top: 46px;
+        flex-direction: column;
+        background: linear-gradient(180deg, #FFFAED 0%, #F4E4BF 100%);
+        box-shadow: 5px 10px 20px rgba(136, 122, 90, 0.4);
+        &-t{
+            margin-top: 110px;
+            background: linear-gradient(180deg, #FFFAED 0%, #F4E4BF 100%);
+            box-shadow: 5px 10px 20px rgba(136, 122, 90, 0.4);
+            height: 352px;
+            border-radius: 30px;
+        }
+        &__p{
+            font-size: 52px;
+            font-family: Inter-Bold;
+            color: $vinous;
+            line-height: 120px;
+            justify-self: center;
+            text-align: center;
+            margin-top: -60px;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            background-color: $roz;
+        }
+        &__p1{
+            font-size: 24px;
+            font-family: Inter-SemiBold;
+            color: $vinous;
+            text-align: center;
+            margin-top: 40px;
+        }
+        &__p2{
+            font-size: 20px;
+            font-family: Inter-SemiBold;
+            color: $vinous;
+            margin-top: 40px; 
+            width: 264px; 
+            text-align: center;
+            margin-left: 25px;   
+            line-height: 153%;   
+        }
+    }
+}
+
+.maff-7{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1493px;
+    margin-left: 220px;
+    gap: 44px;
+    &__p{
+        font-family: Inter-ExtraBold;
+        font-size: 52px;
+        color: $red;
+        text-align: center;
+        margin-top: 56px;
+        margin-left: 30px;
+    }
+    &__column{
+        width: 468px;
+        height: 439px;
+        background-color: $beige;
+        border-radius: 30px;
+        flex-direction: column;
+        margin-top: 40px;
+        box-shadow: $shadow;
+        &-t{
+            margin-top: 60px;
+            height: 439px;
+            background-color: $beige;
+            border-radius: 30px;
+            box-shadow: $shadow;
+        }
+        &__img{
+            border-radius: 10px;
+            margin-top: 38px;
+            margin-left: 38px;
+        }
+        &__p{
+            font-family: Inter-Medium;
+            font-size: 18px;
+            color: $vinous;
+            margin-top: 32px;
+            margin-left: 38px;
+            width: 364px;
+            line-height: 160%;
+        }
+        &__p1{
+            font-family: Inter-Medium;
+            font-size: 24px;
+            color: $vinous;
+            margin-top: 80px;
+            margin-left: 43px;
+        }
+    }
+}
+
+.maff-8{
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__p{
+        font-family: Inter-Bold;
+        font-size: 40px;
+        color: $red;;
+        margin-left: 237px;
+    }
+    &__p1{
+        font-size: 24px;
+        font-family: Inter-Medium;
+        color: $vinous;
+        margin-left: 237px;
+        margin-top: 30px;
+    }
+    &__grid{
+        &__g{
+            margin-left: 60px;
+            margin-top: 50px;
+            display: grid;
+            gap: 40px;
+            height: 645px;
+            width: 325px;
+            grid-template-columns: repeat(2, 1fr);
+            &__foto{
+                height: 645px;
+                width: 325px;
+                &__1{
+                    border-radius: 200px 50px 50px 50px;
+                }
+                &__2{
+                    margin-top: 40px;
+                    border-radius: 50px 50px 200px 50px;
+                }
+                &__3{
+                    border-radius: 50px 200px 50px 50px;
+                }
+                &__4{
+                    margin-top: 40px;
+                    border-radius: 50px 50px 50px 200px;
+                }
+            } 
+        }
+    }
+
+    &__form{
+        margin-top: 40px;
+        margin-left: 238px;
+        &__input{
+            border-radius: 30px; 
+            width: 597px;
+            height: 71px;
+            font-family: Inter-Light;
+            font-size: 20px;
+            display: flex;
+            background-color: #ffffff;
+            border: 2px solid $vinous;
+            margin-top: 10px;
+        }
+        &__buttone{
+            width: 172px;
+            height: 60px;
+            background-color: $vinous;
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-family: Inter-SemiBold;
+            color: $white;
+            margin-top: 32px;
+        }
+    }
+}
+
+.maff-9{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 1489px;
+    margin-left: 230px;
+    &__p1{
+        font-family: Inter-SemiBold;
+        font-size: 52px;
+        color: $red;
+        text-align: center;
+        margin-top: 227px;
+        margin-left: 30px;
+    }
+    &__column{
+        display: flex;
+        z-index: 10;
+        flex-direction: column;  
+        margin-top: 50px;   
+        align-items: center;
+        justify-content: center;  
+        text-align: center;
+        &__img{
+            border-radius: 30px;
+            z-index: 10;
+        }
+        &__div{
+            height: 310px;
+            width: 466px;
+            background-color: $white;
+            box-shadow: $shadow;
+            margin-top: -82px;
+            z-index: 1;
+            margin-left: -22px;
+            border-radius: 30px;
+            &__button{
+                width: 172px;
+                height: 58px;
+                background-color: $vinous;
+                border-radius: 30px;
+                border: none;
+                color: $white;
+                font-family: Inter-SemiBold;
+                font-size: 20px;   
+                margin-top: 40px;     
+            }   
+            &__p{
+                font-family: Inter-SemiBold;
+                font-size: 24px;
+                color: $vinous;
+                margin-top: 120px;
+                z-index: 10;
+                text-align: center;
+            } 
+        }
+    }
+}
+
+.maff-10{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 90px;
+    &__column{
+        &__p{
+            margin-top: 10px;
+            font-size: 40px;
+            font-family: Inter-SemiBold;
+            color: $red;
+            margin-left: 230px;
+        }
+        &__p1{
+            font-size: 20px;
+            font-family: Inter-SemiBold;
+            color: $vinous;
+            margin-left: 230px; 
+            margin-top: 30px;  
+            width: 453px;  
+            line-height: 160%;        
+        }
+        &__p2{
+            font-size: 40px;
+            font-family: Inter-SemiBold;
+            color: $red;
+            margin-left: 230px;
+            margin-top: 55px;
+        }
+        &__p3{
+            font-size: 20px;
+            font-family: Inter-SemiBold;
+            color: $vinous;
+            margin-left: 235px;
+            margin-top: 30px;
+            line-height: 170%;
+        }
+        &__p4{
+            font-size: 40px;
+            font-family: Inter-SemiBold;
+            color: $red;
+            margin-left: 230px;
+            margin-top: 60px;
+        }
+        &__p5{
+            font-size: 20px;
+            font-family: Inter-SemiBold;
+            color: $vinous;
+            margin-left: 230px;
+            margin-top: 30px;
+        }
+        &__vectors{
+            display: flex;
+            margin-left: 240px;
+            margin-top: 45px;
+            gap: 30px;
+        }
+        &__img{
+            border-radius: 30px 100px 30px 100px;
+            border: 2px solid $vinous;
+            margin-left: 35px;
+            width: 725px;
+            height: 638px;
+        }
+    }
+}
+
+.maff-11{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    width: 1491px;
+    height: 270px;
+    background: linear-gradient(180deg, rgba(243, 154, 171, 0.5) 0%, #FFFAED 100%);
+    box-shadow: 5px 10px 20px rgba(136, 122, 90, 0.4);
+    border-radius: 30px;
+    margin-top: 160px;
+    margin-left: 230px;
+    &__grid{
+        &__p{
+            font-size: 40px;
+            font-family: Inter-Bold;
+            margin-top: 74px;
+            margin-left: 128px;
+            color: $red;
+        }
+        &__p1{
+            font-size: 20px;
+            font-family: Inter-Bold;
+            margin-top: 40px;
+            color: $vinous;  
+            margin-left: 128px;    
+        }
+        &__button{
+            height: 60px;
+            width: 173px;
+            background: linear-gradient(180deg, rgba(251, 214, 212, 0.01) 0%, rgba(252, 226, 221, 0.01)) ;
+            border: 1px solid #4B1210;
+            color: $vinous;
+            font-family: Inter-Bold;
+            font-size: 20px;
+            border-radius: 30px;
+            margin-top: 140px;
+            margin-left: 160px;
+        }
+    }
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 263px;
+    margin-left: 235px;
+    &__column{
+        &__p2{
+            font-size: 40px;
+            font-family: Inter-Bold;
+            color: $red;
+        }
+        &__p3{
+            font-size: 18px;
+            font-family: Inter-SemiBold;
+            color: $vinous;    
+            margin-top: 35px;
+            line-height: 150%;            
+        }
+        &__p{
+            font-size: 18px;
+            font-family: Inter-SemiBold;
+            color: $red;  
+            &-t{
+                font-size: 18px;
+                font-family: Inter-SemiBold;
+                color: $red;
+                margin-left: 100px;
+                margin-top: 20px;
+            }   
+            &-y{
+                font-size: 18px;
+                font-family: Inter-SemiBold;
+                color: $red;
+                margin-left: 50px;
+                margin-top: 20px;   
+            }  
+            &-u{
+                font-size: 18px;
+                font-family: Inter-SemiBold;
+                color: $red;
+                margin-left: 15px;
+                margin-top: 20px;   
+            }   
+        }
+        &__p1{
+            font-size: 18px;
+            font-family: Inter-SemiBold;
+            color: $vinous;    
+            margin-top: 30px;  
+            line-height: 286%; 
+            &-t{
+                font-size: 18px;
+                font-family: Inter-SemiBold;
+                color: $vinous;    
+                margin-top: 15px;  
+                line-height: 286%; 
+                margin-left: 100px;
+            }  
+            &-y{
+                font-size: 18px;
+                font-family: Inter-SemiBold;
+                color: $vinous;    
+                margin-top: 15px;  
+                line-height: 286%; 
+                margin-left: 50px;   
+            }    
+        }
+        &__vec{
+            display: flex;
+            margin-top: 25px;
+            gap: 36px;    
+            margin-left: 10px;        
+        }
+    }
+}
+
+.footer-2{
+    height: 131px;
+    background-color: $beige;
+    margin-top: 71px;
+    &__p{
+        font-size: 20px;
+        font-family: Inter-SemiBold;
+        color: $vinous;
+        text-align: center;
+        padding-top: 57px;
+        margin-left: 15px;
+    }
+}

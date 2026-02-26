@@ -1,0 +1,421 @@
+@media screen and (max-width: 390.4px){
+    .container{
+        width: 390.4px;
+        height: 16299px;
+        background-color: #FFFAED;
+        overflow-x: hidden;
+    } 
+    
+    .header{
+        &__p{
+            margin-left: 50px;
+            margin-top: 25px;
+        }
+        &__input{
+          display: none;
+        }
+        &__nav{
+          display: none;
+        }
+      }
+    .drop{
+        display: block;
+    }
+    
+    .drop_button{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+        border: none;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    .drop_content {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        background-color: #F39AAB;
+        border-radius: 10px;
+        z-index: 5;
+        flex-direction: column;
+        min-width: 100px;
+        align-items: self-end;
+    }
+    .line{
+        all: unset;
+        background-color: #730B18;
+        width: 30px;
+        height: 5px;
+        border-radius: 8px;
+    }
+    .drop_content_a{
+        text-decoration: none;
+        padding: 12px 20px;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .drop:hover .drop_content {
+        display: flex; 
+    }
+
+    .maff-1{
+      grid-template-columns: 1fr;
+      width: 370px;
+      height: 469px;
+      &__grid{
+        &__p{
+          font-size: 40px;
+          margin-left: 50px;
+          margin-top: 50px;
+          width: 370px;
+        }
+        &__p2{
+          margin-left: 50px;
+          width: 300px;
+          margin-top: 20px;
+        }
+        &__input{
+          margin-left: 50px;
+          margin-top: 50px;
+        }   
+        &__g{
+          display: flex;
+          margin-left: 15px;
+          margin-top: 50px;
+          gap: 10px;
+          &__column{
+            &__img{
+              width: 175px;
+              height: 350px;
+              &-2{
+                height: 350px;
+              }
+            }
+            &__grad{
+              width: 175px;
+              height: 72px;
+              &-2{
+                width: 175px;
+                height: 72px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .p{
+      margin-top: 770px;
+      margin-left: 1px;
+      font-size: 35px;
+      text-align: center;
+    }
+    .maff-2{
+      width: 370px;
+      grid-template-columns: 1fr;
+      margin-left: -1px;
+      margin-top: 10px;
+      row-gap: 50px;
+      &__sobitie{
+        &__s1{
+          width: 330px;
+          height: 330px;
+        }
+        &__div{
+          margin-left: -30px;
+          width: 330px;
+          height: 281px;
+          &__input{
+            margin-left: 80px;
+          }
+        }
+      }
+    }
+
+    .p-2{
+      font-size: 40px;
+      margin-left: 70px;
+    }
+    .maff-3{
+      grid-template-columns: 1fr;
+      margin-left: -550px;
+      gap: 30px;
+      &__poshemy{
+        &__n{
+          height: 200px;
+          width: 330px;
+          margin-top: -120px;
+
+        }
+        &__img{
+        height: 330px;
+        width: 330px;
+        border-radius: 30px;
+          &-t{
+            margin-top: 1px;
+            height: 330px;  
+            border-radius: 30px;
+          }
+        }  
+        &__p{
+          font-size: 20px;
+          margin-top: 230px;
+          font-family: Inter-Medium;
+        }  
+        &__p1{
+          margin-top: 260px;
+          font-family: Inter-Light;
+          width: 300px;
+        }  
+      }
+    }
+
+  .maff-4{
+    height: 824px;
+    width: 350px;
+    margin-top: 70px;
+    margin-left: 20px;
+    grid-template-columns: 1fr;
+    &__column{
+      margin-top: 80px;
+    }
+  }
+
+  .maff-5{
+    grid-template-columns: 1fr;
+    display: grid;
+    &__p{
+      margin-top: 40px;
+      margin-right: 70px;
+      margin-left: 20px;
+      width: 350px;
+    }
+    &__foto{
+      display: none;
+    }
+    &__form{
+      &__input{
+        width: 300px;
+        height: 50px;
+      }
+    }
+  }
+
+  .maff-6{
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    margin-left: 35px;
+    row-gap: 20px;
+    &__column{
+      margin-top: 100px;
+      &-t{
+        height: 352px;
+        width: 317px;
+        margin-top: 100px;
+      }
+    }
+    &__p{
+      margin-top: 100px;
+      margin-left: 10px;
+    }
+  }
+
+  .maff-7{
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    row-gap: 10px;
+    &__p{
+      margin-top: 170px;
+      margin-left: 1px;
+    }
+    &__column{
+      width: 350px;
+      height: 410px;
+      margin-top: 60px;
+      &-t{
+        width: 350px;
+        height: 410px;
+        margin-top: 60px;
+      }
+      &__p{
+        width: 290px;
+      }
+      &__p1{
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .maff-8{
+    grid-template-columns: 1fr;
+    &__p{
+      margin-top: 10px;
+      margin-left: 25px;
+      width: 350px;
+    }
+    &__p1{
+      margin-left: 25px;
+    }
+    &__form{
+      margin-left: 25px;
+      &__input{
+        width: 300px;
+        height: 50px;        
+      }
+    }
+    &__grid{
+      height: 550px;
+      &__g{
+        display: flex;
+        margin-left: 20px;
+        gap: 20px;
+        height: 400px;
+        &__foto{
+          &__1{
+            width: 164.86px;
+            height: 228.26px;
+          }
+          &__4{
+            width: 164.86px;
+            height: 78.62px;
+          }
+          &__2{
+            width: 164.86px;
+            height: 228.26px;
+          }
+          &__3{
+            width: 164.86px;
+            height: 78.62px;
+          }
+        }
+      }
+    }
+  }
+
+  .maff-9{
+    grid-template-columns: 1fr;
+    margin-left: -550px;
+    &__p1{
+      margin-top: -40px;
+      margin-left: 10px;
+    }
+    &__column{
+      &__img{
+        height: 330px;
+        width: 330px;
+        margin-left: 20px;
+      }
+      &__div{
+        width: 330px;
+        height: 330px;
+        &__p{
+          width: 300px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .maff-10{
+    grid-template-columns: 1fr;
+    margin-left: -180px;
+    &__column{
+      width: 390px;
+      &__p1{
+        width: 330px;
+      }
+      &__p2{
+        width: 390px;
+      }
+      &__p3{
+        height: 100px;
+        width: 500px;
+      }
+      &__img{
+        width: 350px;
+        height: 350px;
+        margin-left: 200px;
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .maff-11{
+    height: 524px;
+    width: 350px;
+    margin-left: 20px;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    &__grid{
+      &__p{
+        margin-left: 35px;
+      }
+      &__p1{
+        margin-left: 35px;
+        width: 300px;
+        line-height: 200%;
+      }
+      &__button{
+        margin-left: 80px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .footer{
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+    margin-top: 100px;
+    &__column{
+      &__p{
+        margin-top: 50px;
+        line-height: 70%;
+        &-t{
+          margin-top: 50px;
+          line-height: 70%;
+          margin-left: 1px;
+          }
+        &-y{
+          margin-top: 50px;
+          line-height: 70%;
+          margin-left: 1px;          
+        }
+        &-u{
+          margin-top: 50px;
+          line-height: 70%;
+          margin-left: 1px;          
+        }        
+      }    
+      &__p1{
+        margin-top: 20px;
+        line-height: 150%;
+        &-t{
+          margin-top: 20px;
+          margin-left: 1px;       
+        }
+        &-y{
+          margin-top: 20px;
+          margin-left: 1px;       
+        }
+        &-u{
+          margin-top: 20px;
+          line-height: 150%; 
+          margin-left: 1px;       
+        }
+      }
+      &__vec{
+        margin-left: 1px;
+      }
+    }
+  }
+
+  .footer-2{
+    &__p{
+      margin-left: 10px;
+    }
+  }
+}
+
